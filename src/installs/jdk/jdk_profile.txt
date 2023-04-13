@@ -1,0 +1,5 @@
+# Set PATH to the JAVA
+JAVA_HOME='/opt/jdk1.8.0_351'
+if [ -d $JAVA_HOME ]; then
+        PATH="$JAVA_HOME/bin:$PATH"
+fi

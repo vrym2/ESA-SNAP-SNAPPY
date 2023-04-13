@@ -22,14 +22,19 @@ echo "Open a new terminal for the completion"
 echo "Installing mamba in the base conda environment"
 conda install mamba -n base -c conda-forge
 
-# Create mamba env
-echo "Now, conda commands can be replaced with mamba"
+# Adding conda channels
 echo "Add channels to the conda environemnt"
 conda config --show channels
 echo "Adding conda-forge channels"
 conda config --add channels conda-forge
 echo "example mamba install command"
 echo "mamba install -c conda-forge <package>"
+
+# Create mamba env
+echo "Now, conda commands can be replaced with mamba"
+echo "Create conda virtual environment with python3.7"
+mamba create -n esa_snap python=3.7
+
 
 
 
