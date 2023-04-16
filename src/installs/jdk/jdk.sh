@@ -86,3 +86,12 @@ else
     echo "$bashrc does not exist"
     echo "create $bashrc file"
 fi
+
+# Checking if JAVA is installed successfully
+java=$(java -version)
+if java -version; then
+    echo "JAVA installation successful"
+    echo "$java"
+else
+    echo "$java"
+fi
